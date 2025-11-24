@@ -1,4 +1,4 @@
-version: '3.9'
+#version: '3.9'
 
 services:
   db:
@@ -6,9 +6,10 @@ services:
     container_name: HuertosDocker
     restart: always
     ports:
-      - "5432:5432"
+      - "5436:5432"
     environment:
-      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
-      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
     volumes:
       - ./postgres:/var/lib/postgresql/data
