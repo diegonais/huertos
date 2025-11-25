@@ -13,6 +13,8 @@ import { UsersModule } from './users/users.module';
 // import { TaskEventModule } from './task-event/task-event.module';
 // import { ItemModule } from './item/item.module';
 // import { MovementModule } from './movement/movement.module';
+import { TasksModule } from './tasks/tasks.module';
+import { TaskEventsModule } from './task-events/task-events.module';
 
 @Module({
   imports: [
@@ -40,6 +42,8 @@ import { UsersModule } from './users/users.module';
 
     RolesModule,
     UsersModule,
+    TasksModule,
+    TaskEventsModule,
     // LoginModule,
     // SeedModule,
 
